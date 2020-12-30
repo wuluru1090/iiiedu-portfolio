@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex6</title>
+  </head>
+  <style>
+    body {
+      margin: 50px;
+    }
+
+    .container {
+      width: 1200px;
+      margin: auto;
+      /*perspective:1000px;*/
+      /*perspective:1000px;*/
+    }
+
+    .box img {
+      width: 300px;
+    }
+
+    .card {
+      position: relative;
+      transform-style: preserve-3d;
+      float: left;
+      margin: 0 20px 20px;
+      width: 200px;
+      height: 280px;
+      /*height:400px;*/
+    }
+
+    .card.active {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .front {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+
+    .transition {
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+    }
+
+    .box:hover {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/d.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/a.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/b.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/b.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/c.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/e.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/a.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/d.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/c.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card transition">
+        <div class="card_wrap">
+          <img class="back" src="images/card.jpg" />
+          <img class="front" src="images/e.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let pairCount = $(".card").length / 2;
+      let pair = [];
+      let goal = [];
+      function disablePaired() {
+        for (i = 0; i < pairCount; i++) {
+          let paired = goal[i];
+          // console.log(paired)
+          $('[src="' + paired + '"]')
+            .parentsUntil("container")
+            .off("clink");
+        }
+      }
+
+      $(".card").click(function () {
+        var name = $(this).find(".front").attr("src");
+        // // 判斷有沒有被翻牌
+        if ($(this).hasClass("active")) {
+          if (goal.indexOf(name) == -1) {
+            pair.pop(name);
+          }
+        } else {
+          $(this).addClass("active");
+          //針對選取的兩張牌進行配對的判斷
+          if (pair.length < 2) {
+            pair.push(name);
+          }
+          if (pair.length == 2) {
+            if (pair[0] != pair[1]) {
+              setTimeout(function () {
+                for (var i = 0; i < 2; i++) {
+                  let imgSrc = pair[i];
+                  // console.log(imgSrc)
+                  $('[src="' + imgSrc + '"]')
+                    .parentsUntil("container")
+                    .removeClass("active");
+                }
+                pair = [];
+              }, 500);
+              // setTimeout('remove()',800)
+            } else {
+              if (goal.indexOf(name) == -1) {
+                goal.push(name);
+              }
+              pair = [];
+            }
+          }
+
+          if (goal.length == pairCount) {
+            setTimeout('alert("你贏了!")', 500);
+          }
+        }
+
+        console.log("pair: " + pair);
+        console.log("goal: " + goal);
+
+        //已經確認配對的卡牌必須被設定為不能再被點擊
+        // for (i=0;i<pairCount;i++){
+        //   let paired = goal[i];
+        //   // console.log(paired)
+        //   $('[src="' + paired + '"]').parentsUntil("container").off("clink")
+        // }
+      });
+    </script>
+  </body>
+</html>
