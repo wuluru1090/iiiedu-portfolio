@@ -14,21 +14,19 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
         body {
-            background: rgb(205, 219, 235);
+            background-image:url('./images/bg.png');
+            background-size: cover;
         }
+        .card-title{
+            font-size:18px
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row mt-3 mb-3" id="list">
-            <!-- <div class="card text-white bg-primary col-3">
-              <img class="card-img-top mt-2" src="images/item-apple.jpg" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
-              </div>
-            </div> -->
         </div>
         <div class="justify-content-center row">
             <div class="col-4">
@@ -99,7 +97,7 @@
             var lists = "";
             for (i = 0; i < response.length; i++) {
                 lists += `<div class="card col mx-2">
-                      <img class="card-img-top m-2" src="images/${response[i]["image"]}" alt="">
+                      <img class="card-img-top my-2" src="images/${response[i]["image"]}" alt="">
                       <div class="card-body">
                         <h4 class="card-title">${response[i]["name"]}</h4>
                         <div class="d-flex justify-content-between">

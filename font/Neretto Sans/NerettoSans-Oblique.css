@@ -1,0 +1,12 @@
+/* Webfont: NerettoSans-Oblique */@font-face {
+    font-family: 'NerettoSans';
+    src: url('NerettoSans-Oblique.eot'); /* IE9 Compat Modes */
+    src: url('NerettoSans-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('NerettoSans-Oblique.woff') format('woff'), /* Modern Browsers */
+         url('NerettoSans-Oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('NerettoSans-Oblique.svg#NerettoSans-Oblique') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

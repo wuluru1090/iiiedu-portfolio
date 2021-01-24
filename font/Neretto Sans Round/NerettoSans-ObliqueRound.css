@@ -1,0 +1,12 @@
+/* Webfont: NerettoSans-ObliqueRound */@font-face {
+    font-family: 'NerettoSansRound';
+    src: url('NerettoSans-ObliqueRound.eot'); /* IE9 Compat Modes */
+    src: url('NerettoSans-ObliqueRound.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('NerettoSans-ObliqueRound.woff') format('woff'), /* Modern Browsers */
+         url('NerettoSans-ObliqueRound.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('NerettoSans-ObliqueRound.svg#NerettoSans-ObliqueRound') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -3,25 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WU LU RU</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        background-image: linear-gradient(
-          to left top,
-          #3f66a0,
-          #4f61b0,
-          #6d57b9,
-          #9145b9,
-          #b61fae
-        );
-      }
-    </style>
+    <link rel="stylesheet" href="./mystyle.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="NerettoSans-Oblique.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <div class="first">
+      <div class="container">
+        <!-- 首頁 -->
+        <div class="row d-flex justify-content-between">
+          <div class="aisatu col-6 col-md-6">
+            <h1>WELCOME</h1>
+            <h1>TO LU JU's</h1>
+            <h1>PORTFOLIO</h1>
+            <span class="job">FRONTEND ENGINEER</span>
+          </div>
+          <div class="col-5">
+            <figure class="my-pic">
+              <img src="./images/me.jpg" alt="me" />
+            </figure>
+            <div class="chinese">
+              嗨!&nbsp;我叫做吳律儒，這是我的<span class="job">前端作品集</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="divider"></div> -->
+      </div>
+    </div>
+    <!-- 簡介 -->
+    <div class="second">
+      <div class="container">
+        <div class="brief row d-flex justify-content-between">
+          <div class="col-6 words">
+            <h5>
+              2020畢業於國立臺灣大學戲劇學系。在學期間主修舞台設計與平面設計，曾修習Python相關課程，2020年六月剛畢業即參加資策會前端工程師養成班。對於前端技術及網頁設計充滿熱忱，亦了解基礎後端技術，在資策會的兩個專案中皆擔任藝術總監與技術研究的職位和角色。
+            </h5>
+          </div>
+          <div class="col-5 contact">
+            <h4>聯絡我</h4>
+            <h4>CONTACT ME</h4>
+            <span class="d-block"
+              >email&nbsp;:&nbsp;wuluruz99118@gmail.com</span
+            >
+            <span class="d-block">phone&nbsp;:&nbsp;0956-061002</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 作品 -->
+    <div class="third">
+      <div class="container">
+        <div class="title">應用練習<span>PRACTICE</span></div>
+        <div class="content">利用上課所學的技術製作的小練習</div>
+        <div class="card-container d-flex justify-content-between">
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top"
+              src="./images/HairMap美髮地圖.gif"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <h5 class="card-title">RWD網站排版練習</h5>
+                <p class="card-text">依照設計圖切版並製作響應式網頁。</p>
+              </div>
+              <a
+                href="./翻牌遊戲/flip-card.html"
+                class="btn btn-primary to-work"
+                target="_blank"
+                >前往頁面</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top"
+              src="./images/TOUR ICELAND.gif"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <h5 class="card-title">冰島旅遊網站</h5>
+                <p class="card-text">Bootstrap切版練習</p>
+              </div>
+              <a
+                href="./冰島旅遊網站-bootstrap切版練習/bootstrap_20_吳律儒.html"
+                class="btn btn-primary to-work"
+                target="_blank"
+                >前往頁面</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top"
+              src="./images/cart.gif"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <h5 class="card-title">模擬簡易購物車</h5>
+                <p class="card-text">
+                  用JQuery製作模擬商城購物車的頁面，可動態加總金額。
+                </p>
+              </div>
+
+              <a
+                href="./簡單商城購物車練習/cart.html"
+                class="btn btn-primary to-work"
+                target="_blank"
+                >前往頁面</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top"
+              src="./images/翻牌遊戲 .gif"
+              alt="Card image cap"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="mb-2">
+                <h5 class="card-title">翻牌小遊戲</h5>
+                <p class="card-text">用JQuery製作的簡易翻牌遊戲。</p>
+              </div>
+
+              <a
+                href="./翻牌遊戲/flip-card.html"
+                class="btn btn-primary to-work"
+                target="_blank"
+                >前往頁面</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="forth">
+      <div class="container">
+        <div class="title">小專題<span>PROJECT 1</span></div>
+        <div class="content">
+          建置資料庫並製作具備CRUD功能的管理後台，作為大專題的準備之一。使用PHP、MYSQL、JavaScript等技術，並透過ajax獲得及提交資料以避免過多換頁與重新整理，已達成較符合使用者習慣的操作界面和流程。
+        </div>
+        <div class="pic-wrapper row d-flex justify-content-between">
+          <figure class="main col-6">
+            <img src="./screenshot/會員頁面.png" alt="" />
+          </figure>
+          <div class="col-5 d-flex flex-column justify-content-between">
+            <figure class="right">
+              <img src="./screenshot/會員_檢視.png" alt="" />
+            </figure>
+            <figure class="right">
+              <img src="./screenshot/會員_新增.png" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fifth">
+      <div class="container">
+        <div class="title">大專題<span>PROJECT 2</span></div>
+        <div class="content">
+          <p>揪影 JOIN IN.&nbsp;&nbsp;攝影活動揪團平台</p>
+          <p>此專案主要使用React作為前端開發並使用Bootstrap框架架設網站，後端使用Node.js、Express連接資料庫(MySQL)。使用GitHub進行版本管控。</p>
+          <p>揪影是專屬於攝影愛好者的揪團平台，分享創作的喜悅，共享攝影成果。攝影者可輕鬆發起理想的活動規劃，不用參加制式行程的同時尋找合適的夥伴；會員也可從現有的活動中，找尋符合自己需求的活動參與。本網站亦提供豐富多元的攝影教學課程，致力於推廣攝影。隨著高畫質手機及相機的普及，攝影逐漸成了不少人的興趣之一。透過鏡頭捕捉，將所見的美麗事物及生活日常用影像方式記錄並分享於社群媒體中，已成了不少人的日常習慣。針對這與日俱增的攝影喜好者，我們創建了專屬於攝影者的揪團平台。提供揪團攝影的三項優點，分別是安全性、技巧切磋、共乘便利性。期望能透過活動參與、舉辦及攝影課程讓更多人愛上攝影。
+          </p>
+        </div>
+        <div class="part-wrapper row d-flex justify-content-between">
+          <div class="col-5 hey">
+            <div class="part">我所負責的部分<span>MY PART</span></div>
+            <div class="part-list">
+              <ul>
+                <li>後台會員管理系統(使用PHP、MySQL)</li>
+                <li>活動搜尋頁、活動頁、活動相簿串接、活動參與者頁</li>
+                <li>Node.js 資料串連(活動、會員、訂單串接)
+                </li>
+                <li>資料庫建置</li>
+                <li>網站 UI/UX 設計與設計整合</li>
+                <li>Logo 繪製</li>
+                <li>企劃書排版設計</li>
+                <li>所有頁面整合</li>
+              </ul>
+          </div>
+        </div>
+        <div class="col demo"></div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </body>
 </html>
