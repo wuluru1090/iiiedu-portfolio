@@ -15,6 +15,7 @@ body {
 .aisatu {
   margin-top: 30vh;
 }
+
 .aisatu > h1 {
   font-size: 72px;
   font-family: "NerettoSans", Georgia;
@@ -42,11 +43,24 @@ body {
 .chinese {
   color: #fffaf5;
   font-size: 29px;
-  font-family: "Noto Sans TC", sans-serif;
   font-weight: 900;
 }
 .chinese > .job {
   color: #f2cc64;
+}
+@media screen and (max-width: 1440px) {
+  .aisatu > h1 {
+    font-size: 60px;
+  }
+  .aisatu > .job {
+    font-size: 28px;
+  }
+  .my-pic {
+    height: 260px;
+  }
+  .chinese {
+    font-size: 24px;
+  }
 }
 .divider {
   margin-top: 6vh;
@@ -55,6 +69,7 @@ body {
 }
 .second {
   background: #fffaf5;
+  padding-bottom: 60px;
 }
 .brief {
   color: #3960a1;
@@ -71,6 +86,44 @@ body {
 .brief h4 {
   font-weight: 900;
   font-family: "NerettoSans", "Noto Sans TC", sans-serif;
+}
+.skill {
+  width: 100%;
+  background: #dadada;
+  border-radius: 30px;
+  padding: 32px;
+}
+.skill-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #3960a1;
+}
+.skill-title span {
+  font-family: "NerettoSans", Georgia;
+  font-size: 28px;
+  margin-left: 21px;
+}
+.skill-list {
+  margin-top: 24px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.skill-list .list-title {
+  font-family: "NerettoSans", Georgia;
+  font-size: 16px;
+  margin-left: 21px;
+  margin-bottom: 12px;
+}
+.skill-list li {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.list-title span {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  margin-left: 12px;
 }
 
 .third {
@@ -95,7 +148,14 @@ body {
   font-weight: 700;
   margin: 24px 0px 48px 0px;
 }
-
+@media screen and (max-width: 1440px) {
+  .card {
+    width: 13rem !important;
+  }
+}
+.card {
+  width: 15rem;
+}
 .card .card-title {
   margin: 12px 0px;
   color: #3960a1;
@@ -126,10 +186,19 @@ body {
 .fifth {
   padding-bottom: 60px;
 }
+@media screen and (max-width: 1440px) {
+  .pic-wrapper .main {
+    width: 600px !important;
+  }
+  .main img {
+    width: 600px !important;
+  }
+}
 .pic-wrapper .main {
   height: 60vh;
   width: 740px;
 }
+
 .main,
 .right {
   overflow: hidden;
