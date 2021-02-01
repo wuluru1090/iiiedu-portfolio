@@ -29,13 +29,13 @@
       <div class="container">
         <!-- 首頁 -->
         <div class="row d-flex justify-content-between">
-          <div class="aisatu col-6 col-md-6">
+          <div class="aisatu col-md-6 col-sm-12">
             <h1>WELCOME</h1>
             <h1>TO LU JU's</h1>
             <h1>PORTFOLIO</h1>
             <span class="job">FRONTEND ENGINEER</span>
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-sm-12">
             <figure class="my-pic">
               <img src="./images/me.jpg" alt="me" />
             </figure>
@@ -51,12 +51,14 @@
     <div class="second">
       <div class="container">
         <div class="brief row d-flex justify-content-between">
-          <div class="col-6 words">
+          <div class="col-md-6 col-sm-12 words">
+            <h4>關於我</h4>
+            <h4>ABOUT ME</h4>
             <h5>
               2020畢業於國立臺灣大學戲劇學系。在學期間主修舞台設計與平面設計，曾修習Python相關課程，2020年六月剛畢業即參加資策會前端工程師養成班(2020/09/16-2021/01/29，共582小時)。對於前端技術及網頁設計充滿熱忱，亦了解基礎後端技術，在資策會的兩個專案中皆擔任藝術總監與技術研究的職位和角色。
             </h5>
           </div>
-          <div class="col-5 contact">
+          <div class="col-md-5 col-sm-12 contact">
             <h4>聯絡我</h4>
             <h4>CONTACT ME</h4>
             <span class="d-block"
@@ -68,7 +70,7 @@
         <div class="skill">
           <div class="skill-title">技能與專長<span>SKILLS</span></div>
           <div class="skill-area row d-flex">
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">JavaScript & React</div>
                 <ul>
                   <li>JavaScript ES6</li>
@@ -81,7 +83,7 @@
                   <li>Babel</li>
               </ul>
             </div>
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">HTML&nbsp;/&nbsp;CSS</div>
                 <ul>
                   <li>HTML 5</li>
@@ -92,7 +94,7 @@
                   <li>響應式網頁設計(RWD)</li>
               </ul>
             </div>
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">Backend</div>
                 <ul>
                   <li>PHP</li>
@@ -101,7 +103,7 @@
                   </li>
               </ul>
             </div>
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">Design&nbsp;/&nbsp;UI</div>
                 <ul>
                   <li>Adobe Photoshop&nbsp;/&nbsp;Illustrator&nbsp;/&nbsp;Indesign</li>
@@ -110,16 +112,16 @@
                   </li>
               </ul>
             </div>
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">Git<span>版本控制與其他</span></div>
                 <ul>
                   <li>使用Git作為版本管理工具</li>
-                  <li>Git Flow</li>
+                  <!-- <li>Git Flow</li> -->
                   <li>Git Hub</li>
                   <li>MarkDown</li>
               </ul>
             </div>
-            <div class="col-4 skill-list">
+            <div class="col-md-4 col-sm-12 skill-list">
               <div class="list-title">Language</div>
                 <ul>
                   <li>中文&nbsp;&nbsp;優</li>
@@ -137,8 +139,9 @@
       <div class="container">
         <div class="title">應用練習<span>PRACTICE</span></div>
         <div class="content">利用上課所學的技術製作的小練習</div>
-        <div class="card-container d-flex justify-content-between">
-          <div class="card" >
+        <div class="card-container d-flex justify-content-center row">
+          <div class="up col-md-6 row d-flex justify-content-around">
+          <div class="card col-md-6 col-sm-12" >
             <img
               class="card-img-top"
               src="./images/HairMap美髮地圖.gif"
@@ -157,7 +160,7 @@
               >
             </div>
           </div>
-          <div class="card" >
+          <div class="card col-md-6 col-sm-12" >
             <img
               class="card-img-top"
               src="./images/TOUR ICELAND.gif"
@@ -176,7 +179,9 @@
               >
             </div>
           </div>
-          <div class="card" >
+        </div>
+        <div class="down col-md-6 row d-flex justify-content-around">
+          <div class="card col-md-6 col-sm-12" >
             <img
               class="card-img-top"
               src="./images/cart.gif"
@@ -198,7 +203,7 @@
               >
             </div>
           </div>
-          <div class="card">
+          <div class="card col-md-6 col-sm-12">
             <img
               class="card-img-top"
               src="./images/翻牌遊戲 .gif"
@@ -220,6 +225,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     <div class="forth">
       <div class="container">
@@ -228,14 +234,14 @@
           建置資料庫並製作具備CRUD功能的管理後台，作為大專題的準備之一。使用PHP、MYSQL、JavaScript等技術，並透過ajax獲得及提交資料以避免過多換頁與重新整理，已達成較符合使用者習慣的操作界面和流程。
         </div>
         <div class="pic-wrapper row d-flex justify-content-between">
-          <figure class="main col-7">
+          <figure class="main col-md-7 col-sm-12">
             <img src="./screenshot/會員頁面.png" alt="" />
           </figure>
           <div class="col d-flex flex-column justify-content-between">
-            <figure class="right">
+            <figure class="right col-sm-12">
               <img src="./screenshot/會員_檢視.png" alt="" />
             </figure>
-            <figure class="right">
+            <figure class="right col-sm-12">
               <img src="./screenshot/會員_新增.png" alt="" />
             </figure>
           </div>
@@ -252,7 +258,7 @@
           </p>
         </div>
         <div class="part-wrapper row d-flex justify-content-between">
-          <div class="col-5 hey">
+          <div class="col-md-5 col-sm-12 hey">
             <div class="part">我所負責的部分<span>MY PART</span></div>
             <div class="part-list">
               <ul>
